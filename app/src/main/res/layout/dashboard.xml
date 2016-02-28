@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:focusableInTouchMode="true" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Drawing"
+        android:id="@+id/buttonCreateDrawing"
+        android:onClick="draw"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/button2"
+        android:onClick="addUser"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@+id/editTextRealAddFriend"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:id="@+id/listViewFriends"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView4" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:id="@+id/listViewDrawings"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:onClick="refresh"
+        android:id="@+id/button3"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonCreateDrawing"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextRealAddFriend"
+        android:hint="Friend's Username"
+        android:layout_below="@+id/buttonCreateDrawing"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Friends"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editTextRealAddFriend"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Current Drawings"
+        android:id="@+id/textView4"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button4"
+        android:layout_toStartOf="@+id/button4"
+        android:layout_above="@+id/listViewDrawings" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed Drawings"
+        android:onClick="viewCompletedDrawings"
+        android:id="@+id/button4"
+        android:layout_below="@+id/listViewFriends"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:onClick="logout"
+        android:id="@+id/button6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_above="@+id/editTextRealAddFriend" />
+
+</RelativeLayout>

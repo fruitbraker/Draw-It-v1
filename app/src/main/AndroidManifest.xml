@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pericappstudio.drawit" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pericappstudio.drawit.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pericappstudio.drawit.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pericappstudio.drawit.CreateAccount"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pericappstudio.drawit.NewDrawingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.DRAWNEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pericappstudio.drawit.Dashboard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.DASHBOARD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pericappstudio.drawit.CreateNewDrawingDashboard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATENEWDRAWING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pericappstudio.drawit.ContinueDrawingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CONTINUEDRAWING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pericappstudio.drawit.ViewCompletedDrawingDashboard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEWCOMPLETEDASHBOARD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name="com.pericappstudio.drawit.ImageViewComplete"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.VIEWCOMPLETE" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name="com.pericappstudio.drawit.ViewPictureInfo"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICTUREINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
