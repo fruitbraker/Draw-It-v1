@@ -7,3 +7,6 @@ This application was briefly on Google Play store. Since then, I have taken it d
 Additionally, I lost the security key needed to sign the APK, so this working package directory is essentially gone forever. Oops. Rookie mistake.
 
 Special thanks to CloudMine for allowing me to use their awesome serveice to host everything. Without their support and backend processing, this application would not have happened.
+
+
+If you download this project and try to run it, it will not work. The API keys are disabled for security reasons.
